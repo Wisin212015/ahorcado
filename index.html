@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>Juego del Ahorcado</title>
+	<style type="text/css">
+    body
+    {
+        background: #BDB76B;
+        color: black;
+        text-align: center;
+        
+    }
+    </style>
+
+	<script type="text/javascript" src="ahorcado4.js"></script>
+</head>
+<body>
+	<h1>Juego: ***El Ahoracado***</h1>
+	<h1>Adivina letra a letra</h1>
+	
+	<p>
+		Elige una letra:
+		<input type="text" id="letra" />
+		<input type="button" id="boton" value="Boom!!" />
+	</p>
+	<h1 id="pista">_ _ _ _ _ _ _ _ _</h1>
+	<canvas id="c" style="float:left" ></canvas>
+
+	 <!--para mostrarle al jugador si gano o perdio el juego-->
+	<p1 id="volver">
+		<input type="button" id="volverAJugar" style="float:right" onClick="window.parent.location.reload()" value="Volver a jugar">
+	</p1>
+
+	<p>	
+		<h2 id="mensaje"></h2>
+	</p>  	
+
+	<script type="text/javascript">
+	iniciar();
+	</script>
+</body>
+</html>
